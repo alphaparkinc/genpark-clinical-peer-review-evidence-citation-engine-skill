@@ -1,0 +1,35 @@
+{
+  "name": "genpark-clinical-peer-review-evidence-citation-engine-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Clinical peer-reviewed medical evidence synthesis engine citing PubMed, NEJM, Lancet, and FDA guidelines with zero hallucination guarantee.",
+  "author": "genpark",
+  "category": "medical-ai",
+  "tags": [
+    "clinical-evidence",
+    "pubmed-citations",
+    "peer-reviewed-ai",
+    "medical-consensus",
+    "openevidence"
+  ],
+  "inputs": {
+    "medical_query": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "evidence_query_id": {
+      "type": "string"
+    },
+    "peer_reviewed_rcts_analyzed": {
+      "type": "integer"
+    },
+    "fda_ema_guideline_alignment_score_pct": {
+      "type": "number"
+    },
+    "ama_cme_accredited_reference_ready": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
